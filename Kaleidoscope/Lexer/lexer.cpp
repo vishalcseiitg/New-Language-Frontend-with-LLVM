@@ -82,7 +82,7 @@ The next thing gettok needs to do is recognize identifiers and specific keywords
   return ThisChar;
 }
 
-//With this, we have the complete lexer for the basic Kaleidoscope language
+//With this, we have the complete lexer for the basic Kaleidoscope language.
 
 
 
