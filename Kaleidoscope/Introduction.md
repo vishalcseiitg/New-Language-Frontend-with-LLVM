@@ -4,6 +4,8 @@ We want to keep things simple, so the only datatype in Kaleidoscope is a 64-bit 
 
 # Compute the x'th fibonacci number.
 
+```
+
 def fib(x)
   if x < 3 then
     1
@@ -13,11 +15,17 @@ def fib(x)
 # This expression will compute the 40th number.
 fib(40)
 
+```
+
 We also allow Kaleidoscope to call into standard library functions - the LLVM JIT makes this really easy. This means that you can use the ‘extern’ keyword to define a function before you use it (this is also useful for mutually recursive functions). For example:
+
+```
 
 extern sin(arg);
 extern cos(arg);
 extern atan2(arg1 arg2);
 
 atan2(sin(.4), cos(42))
+
+```
 
